@@ -9,6 +9,31 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-const eslintConfig = [...compat.extends("next/core-web-vitals")];
+const eslintConfig = [...compat.extends("next/core-web-vitals"),
+  compat.config({
+    files: ["*.js", "*.ts", "*.tsx"],
+    rules: {
+      "no-unused-vars": [
+        "error",
+        {
+          argsIgnorePattern: "^_",
+          varsIgnorePattern: "^_",
+        },
+      ],
+      "react/jsx-no-target-blank": [
+        "error",
+        {
+          enforceDynamicLinks: "always",
+        },
+      ],
+      "react/no-unescaped-entities": [
+        "error",
+        {
+          forbid: [">", "}"],
+        },
+      ],
+    },
+  }),
+];
 
 export default eslintConfig;
