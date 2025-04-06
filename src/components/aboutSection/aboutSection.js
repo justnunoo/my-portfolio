@@ -10,6 +10,17 @@ export default function AboutSection() {
   const { theme } = useTheme();
   const currentTheme = themeConfig[theme] || themeConfig.light;
 
+  const handleDownload = () => {
+    // Create a temporary anchor element
+    const link = document.createElement('a');
+    link.href = '/assests/Justice_Samuel_Nii_Akwah_Nunoo_CV.pdf'; // Path to your CV file
+    link.target = '_blank'; // Open in a new tab
+    link.download = 'Justice_Samuel_Nii_Akwah_Nunoo_CV.pdf'; // Name of the downloaded file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const skills = [
     { name: "SQL", level: 90 },
     { name: "Python", level: 85 },
@@ -106,6 +117,7 @@ export default function AboutSection() {
             >
               <motion.a
                 href="#"
+                onClick={handleDownload}
                 className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300"
                 variants={buttonVariants}
                 whileHover="hover"
