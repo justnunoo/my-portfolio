@@ -36,7 +36,7 @@ export default function ContactModal({ isOpen, onClose }) {
               <div className="flex items-center">
                 <FaEnvelope className="text-blue-500 mr-3 text-xl" />
                 <a
-                  href="mailto:your.email@example.com"
+                  href="mailto:justnunoo@gmail.com"
                   className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition"
                 >
                   justnunoo@gmail.com
@@ -46,7 +46,7 @@ export default function ContactModal({ isOpen, onClose }) {
               <div className="flex items-center">
                 <FaPhone className="text-blue-500 mr-3 text-xl" />
                 <a
-                  href="tel:+1234567890"
+                  href="tel:+233501596921"
                   className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition"
                 >
                   +233 50 159 6921
@@ -56,7 +56,7 @@ export default function ContactModal({ isOpen, onClose }) {
               <div className="flex items-center">
                 <FaLinkedin className="text-blue-500 mr-3 text-xl" />
                 <a
-                  href="https://linkedin.com/in/yourprofile"
+                  href="https://www.linkedin.com/in/justice-samuel-nii-nunoo-38626214b"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition"
