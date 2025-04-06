@@ -165,7 +165,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <motion.button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 focus:outline-none"
+              className={`inline-flex items-center justify-center p-2 rounded-md ${currentTheme.text} hover:text-blue-600 dark:hover:text-blue-400 focus:outline-none`}
               aria-expanded={isOpen}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
@@ -213,7 +213,7 @@ export default function Navbar() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="md:hidden bg-white dark:bg-gray-900 shadow-lg"
+            className={`md:hidden ${currentTheme.background} shadow-lg`}
             initial="hidden"
             animate="visible"
             exit="hidden"
@@ -227,7 +227,7 @@ export default function Navbar() {
                 >
                   <Link
                     href={link.path}
-                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                    className={`block px-3 py-2 rounded-md text-base font-medium ${currentTheme.text} hover:text-blue-600 dark:hover:text-blue-400`}
                     onClick={() => setIsOpen(false)}
                   >
                     {link.name}

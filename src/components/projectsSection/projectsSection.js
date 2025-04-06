@@ -1,87 +1,4 @@
-// import React from 'react';
-// import Link from 'next/link';
-// import { useTheme } from 'next-themes';
-
-// export default function ProjectSection() {
-//     const projects = [
-//         {
-//           id: 1,
-//           title: "E-commerce Platform",
-//           description: "A full-stack e-commerce solution with payment integration.",
-//           tags: ["React", "Node.js", "MongoDB"],
-//         },
-//         {
-//           id: 2,
-//           title: "Portfolio Website",
-//           description: "A responsive portfolio website built with Next.js.",
-//           tags: ["Next.js", "Tailwind CSS"],
-//         },
-//         {
-//           id: 3,
-//           title: "Task Management App",
-//           description: "A productivity app for managing daily tasks and projects.",
-//           tags: ["React", "Firebase"],
-//         },
-//       ];
-
-//   return (
-//     <div>
-//       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
-//         <div className="max-w-7xl mx-auto">
-//           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-white">Featured Projects</h2>
-//           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-//             {projects.map((project) => (
-//               <div
-//                 key={project.id}
-//                 className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300"
-//               >
-//                 <div className="h-48 bg-gray-300 dark:bg-gray-700 flex items-center justify-center">
-//                   <svg
-//                     className="w-16 h-16 text-gray-500 dark:text-gray-400"
-//                     fill="currentColor"
-//                     viewBox="0 0 20 20"
-//                     xmlns="http://www.w3.org/2000/svg"
-//                   >
-//                     <path
-//                       fillRule="evenodd"
-//                       d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
-//                       clipRule="evenodd"
-//                     />
-//                   </svg>
-//                 </div>
-//                 <div className="p-6">
-//                   <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">{project.title}</h3>
-//                   <p className="text-gray-600 dark:text-gray-400 mb-4">{project.description}</p>
-//                   <div className="flex flex-wrap gap-2">
-//                     {project.tags.map((tag) => (
-//                       <span
-//                         key={tag}
-//                         className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full"
-//                       >
-//                         {tag}
-//                       </span>
-//                     ))}
-//                   </div>
-//                 </div>
-//               </div>
-//             ))}
-//           </div>
-//           <div className="text-center mt-12">
-//             <Link
-//               href="/projects"
-//               className="px-6 py-3 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-600 transition duration-300 inline-block"
-//             >
-//               View All Projects
-//             </Link>
-//           </div>
-//         </div>
-//       </section>
-//     </div>
-//   )
-// }
-
-
-"use client";
+ "use client";
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
@@ -98,7 +15,7 @@ export default function ProjectSection() {
       id: 1,
       title: "E-commerce Platform",
       description: "A full-stack e-commerce solution with payment integration.",
-      tags: ["React", "Node.js", "MongoDB"],
+      tags: ["Next.js", "Clerk", "Sanity.io"],
     },
     {
       id: 2,
