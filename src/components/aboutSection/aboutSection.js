@@ -59,9 +59,9 @@ export default function AboutSection() {
     visible: (level) => ({
       width: `${level}%`,
       transition: {
-        duration: 2,
+        duration: 1.5,
         ease: "easeInOut",
-        delay: 0.7
+        delay: 0.3
       }
     })
   };

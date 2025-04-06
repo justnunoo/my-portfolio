@@ -4,11 +4,15 @@ import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
+import { themeConfig } from '@/utils/theme';
 
 export default function Navbar() {
   const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const { theme, setTheme } = useTheme();
+
+  const currentTheme = themeConfig[theme] || themeConfig.light;
 
   useEffect(() => {
     setMounted(true);
@@ -53,7 +57,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-white dark:bg-gray-900 shadow-md w-full">
+    <nav className={`${currentTheme.background} ${currentTheme.text} shadow-md w-full`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Brand Logo - Left */}
@@ -64,9 +68,16 @@ export default function Navbar() {
             transition={{ duration: 0.5 }}
           >
             <Link href="/" className="flex items-center">
-              <span className="text-xl font-bold text-gray-800 dark:text-white">
+              {/* <span className="text-xl font-bold text-gray-800 dark:text-white">
                 YourBrand
-              </span>
+              </span> */}
+              <Image
+                src={currentTheme.logo}
+                alt="Logo"
+                width={50}
+                height={50}
+                className="h-8 w-8 rounded-full"
+              />
             </Link>
           </motion.div>
 
@@ -81,7 +92,7 @@ export default function Navbar() {
                 >
                   <Link
                     href={link.path}
-                    className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium"
+                    className= {`${currentTheme.text}hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium`}
                   >
                     {link.name}
                   </Link>
@@ -92,7 +103,7 @@ export default function Navbar() {
 
           {/* Search and Dark Mode - Right */}
           <div className="hidden md:flex items-center space-x-4">
-            <motion.div 
+            {/* <motion.div 
               className="relative"
               whileHover={{ scale: 1.02 }}
             >
@@ -115,7 +126,7 @@ export default function Navbar() {
                   d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                 />
               </svg>
-            </motion.div>
+            </motion.div> */}
 
             {mounted && (
               <motion.button
@@ -228,7 +239,8 @@ export default function Navbar() {
               className="px-2 pt-2 pb-4 flex items-center space-x-4"
               variants={navItemVariants}
             >
-              <div className="relative flex-1">
+              {/* Search bar for mobile view */}
+              {/* <div className="relative flex-1">
                 <input
                   type="text"
                   placeholder="Search..."
@@ -248,7 +260,7 @@ export default function Navbar() {
                     d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                   />
                 </svg>
-              </div>
+              </div> */}
               {mounted && (
                 <motion.button
                   onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}

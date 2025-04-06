@@ -2,8 +2,14 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { useState } from 'react';
+import ContactModal from '../contactModal/contactModal';
 
 export default function HeroSection() {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+
   // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -34,6 +40,7 @@ export default function HeroSection() {
   };
 
   return (
+    <>
     <motion.section 
       className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-500 to-purple-600 dark:from-blue-700 dark:to-purple-800 text-white"
       initial="hidden"
@@ -104,8 +111,9 @@ export default function HeroSection() {
             </motion.div>
           </Link>
           
-          <Link href="/contact">
+          {/* <Link href="/contact">
             <motion.div
+              onClick={() => setIsModalOpen(true)}
               className="px-6 py-3 border-2 border-white text-white font-medium rounded-lg hover:bg-white hover:text-blue-600 dark:hover:text-blue-800 transition duration-300"
               variants={buttonVariants}
               whileHover="hover"
@@ -113,9 +121,25 @@ export default function HeroSection() {
             >
               Contact Me
             </motion.div>
-          </Link>
+          </Link> */}
+
+          <motion.button
+              onClick={() => setIsModalOpen(true)}
+              className="px-6 py-3 border-2 border-white text-white font-medium rounded-lg hover:bg-white hover:text-blue-600 dark:hover:text-blue-800 transition duration-300"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Contact Me
+            </motion.button>
         </motion.div>
       </div>
     </motion.section>
+
+      {/* Modal for Contact Information */}
+        <ContactModal 
+          isOpen={isModalOpen} 
+          onClose={() => setIsModalOpen(false)} 
+        />
+    </>
   );
 }
