@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useTheme } from 'next-themes';
 import { themeConfig } from '@/utils/theme';
+import Image from 'next/image';
 
 export default function ProjectSection() {
 
@@ -16,19 +17,38 @@ export default function ProjectSection() {
       title: "E-commerce Platform",
       description: "A full-stack e-commerce solution with payment integration.",
       tags: ["Next.js", "Clerk", "Sanity.io"],
+      image: "/sneakerhub.png",
     },
     {
       id: 2,
-      title: "Portfolio Website",
-      description: "A responsive portfolio website built with Next.js.",
-      tags: ["Next.js", "Tailwind CSS"],
+      title: "Companies Sales Dashboard",
+      description: "A dashboard for visualizing companies sales data.",
+      tags: ["SQL", "Tableau", "Python"],
+      image: "/companies_sales_dashboard.png",
     },
+    // {
+    //   id: 2,
+    //   title: "Portfolio Website",
+    //   description: "A responsive portfolio website built with Next.js.",
+    //   tags: ["Next.js", "Tailwind CSS"],
+    //   image: "",
+    // },
+    // {
+    //   id: 3,
+    //   title: "Global Cybersecurity Threats Dashboard",
+    //   description: "A dashboard to visualize global cybersecurity threats.",
+    //   // description: "A data analysis project in the field of cybersecurity to find insights.",
+    //   tags: ["SQL", "Tableau", "Python"],
+    //   image: "",
+    // },
     {
-      id: 3,
-      title: "Task Management App",
-      description: "A productivity app for managing daily tasks and projects.",
-      tags: ["React", "Firebase"],
+      id: 4,
+      title : "New York Housing Sales Dashboard",
+      description: "A dashboard to visualize sales of homes New York and other insights.",
+      tags: ["SQL", "Tableau"],
+      image: "/nyc_housing_sale_dashboard.png"
     },
+    
   ];
 
   // Animation variants
@@ -99,10 +119,23 @@ export default function ProjectSection() {
               viewport={{ once: true }}
             >
               <motion.div 
-                className="h-48 bg-gray-300 dark:bg-gray-700 flex items-center justify-center"
+                className="h-64 bg-gray-300 dark:bg-gray-700 flex items-center justify-center"
                 variants={cardHoverVariants}
               >
-                <svg
+                {project.image ? (
+
+                <Image 
+                src={project.image}
+                alt={project.title}
+                width={200}
+                height={200}
+                className="w-full h-full object-cover"
+                priority
+                />
+
+                
+                ) : (
+                  <svg
                   className="w-16 h-16 text-gray-500 dark:text-gray-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
@@ -113,7 +146,9 @@ export default function ProjectSection() {
                     d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
                     clipRule="evenodd"
                   />
+                
                 </svg>
+                )}
               </motion.div>
               
               <motion.div 

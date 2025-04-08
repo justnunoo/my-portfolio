@@ -1,7 +1,7 @@
 // utils/theme.js
 export const themeConfig = {
     light: {
-      background: 'bg-white',
+      background: 'bg-gray-200',
       text: 'text-gray-900',
       card: 'bg-gray-100',
       button: 'bg-blue-500 hover:bg-blue-600',
