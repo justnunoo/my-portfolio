@@ -14,6 +14,14 @@ export default function ProjectHome() {
 
   const projects = [
     {
+      id: 0,
+      title: "Codebasics Sales Dashboard Project",
+      description: "A dashboard to visualize sales data for a fictional company.",
+      tags: ["SQL", "Tableau", "Excel"],
+      image: "/images/codebasics_sales_dashboard.png",
+      link: "https://public.tableau.com/views/codebasicssalesproject/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+    },
+    {
       id: 1,
       title: "Companies Sales Dashboard",
       description: "A dashboard for visualizing companies sales data.",
@@ -44,14 +52,6 @@ export default function ProjectHome() {
         tags: ["Next.js", "Tailwind CSS"],
         image: "/images/intowine.png",
         link: "https://felix-app.vercel.app"
-    },
-    {
-      id: 5,
-      title: "Codebasics Sales Dashboard Project",
-      description: "A dashboard to visualize sales data for a fictional company.",
-      tags: ["SQL", "Tableau", "Excel"],
-      image: "/images/codebasics_sales_dashboard.png",
-      link: "https://public.tableau.com/views/codebasicssalesproject/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
     },
     {
       id: 6,
