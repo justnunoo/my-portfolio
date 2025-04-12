@@ -15,22 +15,46 @@ export default function ProjectHome() {
   const projects = [
     {
       id: 1,
-      title: "E-commerce Platform",
-      description: "A full-stack e-commerce solution with payment integration.",
-      tags: ["Next.js", "Clerk", "Sanity.io"],
-      image: "/sneakerhub.png",
-      link: "/projects/ecommerce"
-    },
-    {
-      id: 2,
       title: "Companies Sales Dashboard",
       description: "A dashboard for visualizing companies sales data.",
       tags: ["SQL", "Tableau", "Python"],
-      image: "/companies_sales_dashboard.png",
-      link: "/projects/sales-dashboard"
+      image: "/images/companies_sales_dashboard2.png",
+      link: "https://public.tableau.com/views/CFITableauFinalExercise/Dashboard2?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+    },
+    {
+      id: 2,
+      title: "E-commerce Platform",
+      description: "A full-stack e-commerce solution with payment integration.",
+      tags: ["Next.js", "Clerk", "Sanity.io"],
+      image: "/images/sneakerhub.png",
+      link: "/projects/ecommerce"
     },
     {
       id: 3,
+      title: "New York Housing Sales Dashboard",
+      description: "A dashboard to visualize sales of homes in New York and other insights.",
+      tags: ["SQL", "Tableau"],
+      image: "/images/nyc_housing_sale_dashboard.png",
+      link: "https://public.tableau.com/views/nyc-rolling-sales_17085235198880/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+    },
+    {
+        id: 4,
+        title: "IntoWine Consult Website",
+        description: "A website for a start-up financial consulting company.",
+        tags: ["Next.js", "Tailwind CSS"],
+        image: "/images/intowine.png",
+        link: "https://felix-app.vercel.app"
+    },
+    {
+      id: 5,
+      title: "Codebasics Sales Dashboard Project",
+      description: "A dashboard to visualize sales data for a fictional company.",
+      tags: ["SQL", "Tableau", "Excel"],
+      image: "/images/codebasics_sales_dashboard.png",
+      link: "https://public.tableau.com/views/codebasicssalesproject/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+    },
+    {
+      id: 6,
       title: "Portfolio Website",
       description: "A responsive portfolio website built with Next.js.",
       tags: ["Next.js", "Tailwind CSS"],
@@ -38,29 +62,13 @@ export default function ProjectHome() {
       link: "/projects/portfolio"
     },
     {
-      id: 4,
+      id: 7,
       title: "Global Cybersecurity Threats Dashboard",
       description: "A dashboard to visualize global cybersecurity threats.",
       tags: ["SQL", "Tableau", "Python"],
       image: "",
       link: "/projects/cybersecurity"
     },
-    {
-      id: 5,
-      title: "New York Housing Sales Dashboard",
-      description: "A dashboard to visualize sales of homes in New York and other insights.",
-      tags: ["SQL", "Tableau"],
-      image: "/nyc_housing_sale_dashboard.png",
-      link: "/projects/nyc-housing"
-    },
-    {
-        id: 6,
-        title: "IntoWine Consult Website",
-        description: "A website for a start-up financial consulting company.",
-        tags: ["Next.js", "Tailwind CSS"],
-        image: "/intowine.png",
-        link: "https://felix-app.vercel.app"
-    }
   ];
 
   // Animation variants
@@ -128,7 +136,7 @@ export default function ProjectHome() {
               variants={item}
               whileHover="hover"
             >
-              <Link href={project.link}>
+              <Link href={project.link} target="_blank" rel="noopener noreferrer">
                 <motion.div variants={hoverEffect} className="h-full flex flex-col">
                   <div className={`h-64 relative overflow-hidden bg-gray-100 dark:bg-gray-700 flex items-center justify-center`}>
                     {project.image ? (

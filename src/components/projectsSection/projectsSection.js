@@ -14,17 +14,17 @@ export default function ProjectSection() {
   const projects = [
     {
       id: 1,
-      title: "E-commerce Platform",
-      description: "A full-stack e-commerce solution with payment integration.",
-      tags: ["Next.js", "Clerk", "Sanity.io"],
-      image: "/sneakerhub.png",
-    },
-    {
-      id: 2,
       title: "Companies Sales Dashboard",
       description: "A dashboard for visualizing companies sales data.",
       tags: ["SQL", "Tableau", "Python"],
-      image: "/companies_sales_dashboard.png",
+      image: "/images/companies_sales_dashboard.png",
+    },
+    {
+      id: 2,
+      title: "E-commerce Platform",
+      description: "A full-stack e-commerce solution with payment integration.",
+      tags: ["Next.js", "Clerk", "Sanity.io"],
+      image: "/images/sneakerhub.png",
     },
     // {
     //   id: 2,
@@ -46,7 +46,7 @@ export default function ProjectSection() {
       title : "New York Housing Sales Dashboard",
       description: "A dashboard to visualize sales of homes New York and other insights.",
       tags: ["SQL", "Tableau"],
-      image: "/nyc_housing_sale_dashboard.png"
+      image: "/images/nyc_housing_sale_dashboard.png"
     },
     
   ];
