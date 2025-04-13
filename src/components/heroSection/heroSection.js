@@ -150,6 +150,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useState } from 'react';
 import ContactModal from '../contactModal/contactModal';
+import Image from 'next/image';
 
 export default function HeroSection() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -199,14 +200,14 @@ export default function HeroSection() {
               className="w-full lg:w-1/2 flex justify-center lg:justify-end mb-8 lg:mb-0"
               variants={itemVariants}
             >
-              <div className="w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full bg-white dark:bg-gray-800 overflow-hidden border-4 border-white dark:border-gray-700 shadow-lg">
+              <div className="w-52 h-52 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full bg-white dark:bg-gray-800 overflow-hidden border-4 border-white dark:border-gray-700 shadow-lg">
                 {/* Placeholder for profile image */}
                 <motion.div 
                   className="w-full h-full bg-gray-300 dark:bg-gray-600 flex items-center justify-center"
                   whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 >
-                  <svg
+                  {/* <svg
                     className="w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 text-gray-500 dark:text-gray-400"
                     fill="currentColor"
                     viewBox="0 0 20 20"
@@ -217,7 +218,15 @@ export default function HeroSection() {
                       d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
                       clipRule="evenodd"
                     />
-                  </svg>
+                  </svg> */}
+                  <Image
+                  src="/images/profile.jpg"
+                  alt="Profile Image"
+                  width={200}
+                  height={200}
+                  className="w-full h-full object-cover"
+                  priority
+                  />
                 </motion.div>
               </div>
             </motion.div>
