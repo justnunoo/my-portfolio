@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useTheme } from 'next-themes';
 import { themeConfig } from '@/utils/theme';
 import DownloadCVButton from '../downloadCVButton/downloadCVButton';
+import ElevatorPitch from '../ViewElevatorPitch/elevatorPitch';
 
 export default function AboutSection() {
 
@@ -91,14 +92,16 @@ export default function AboutSection() {
               className={`${currentTheme.text} mb-6`}
               variants={itemVariants}
             >
-              I'm a passionate Data Analyst with expertise in SQL, Python, Tableau, and Power BI, coupled with full-stack web development skills using Next.js. I transform complex data into actionable insights while building responsive, data-driven web applications.
+              {/* I'm a passionate Data Analyst with expertise in SQL, Python, Tableau, and Power BI, coupled with full-stack web development skills using Next.js. I transform complex data into actionable insights while building responsive, data-driven web applications. */}
+              Justice Samuel Nunoo is a Physics graduate from Kwame Nkrumah University of Science and Technology (KNUST) with a strong passion for data analysis and web development. With a solid foundation in scientific thinking and problem-solving, he has successfully transitioned into the tech space, where he leverages analytical tools and web technologies to solve real-world challenges.
             </motion.p>
             
             <motion.p 
               className={`${currentTheme.text} mb-6`}
               variants={itemVariants}
             >
-              When I'm not analyzing data or coding, you can find me immersed in video games or books. I thrive on collaboration and constantly seek opportunities to learn from others in the tech community.
+              {/* When I'm not analyzing data or coding, you can find me immersed in video games or books. I thrive on collaboration and constantly seek opportunities to learn from others in the tech community. */}
+              Justice has developed and deployed multiple web applications and conducted insightful data projects that have improved decision-making processes for local businesses. He aspires to become a leading data scientist in Africa and to build innovative digital platforms that empower communities and support sustainable development.
             </motion.p>
             
             <motion.div 
@@ -118,7 +121,7 @@ export default function AboutSection() {
 
               <DownloadCVButton />
               
-              <motion.a
+              {/* <motion.a
                 href="#"
                 className="px-4 py-2 border border-blue-500 text-blue-500 dark:text-blue-400 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-700 transition duration-300"
                 variants={buttonVariants}
@@ -126,7 +129,9 @@ export default function AboutSection() {
                 whileTap="tap"
               >
                 Let's Collaborate
-              </motion.a>
+              </motion.a> */}
+              
+              <ElevatorPitch />
             </motion.div>
           </motion.div>
 

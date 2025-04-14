@@ -18,7 +18,7 @@ export default function DownloadCVButton() {
 
 //   When CV is hosted on Google Drive, use the following code:
   const handleDownload = () => {
-    window.open('https://drive.google.com/file/d/1Yi3llw-S_yVBbLGygKyowk7eq4Ho6BU0/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1K1U0R_EVVJfkIhA0HWhLE7Psl-qMpmpd/view?usp=sharing', '_blank');
   };
 
   return (
