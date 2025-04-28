@@ -13,11 +13,20 @@ export default function ProjectSection() {
 
   const projects = [
     {
+      id: 0,
+      title: "Codebasics Sales Dashboard Project",
+      description: "A dashboard to visualize sales data for a fictional company.",
+      tags: ["SQL", "Tableau", "Excel"],
+      image: "/images/codebasics_sales_dashboard.png",
+      link: "https://public.tableau.com/views/codebasicssalesproject/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+    },
+    {
       id: 1,
       title: "Companies Sales Dashboard",
       description: "A dashboard for visualizing companies sales data.",
       tags: ["SQL", "Tableau", "Python"],
-      image: "/images/companies_sales_dashboard.png",
+      image: "/images/companies_sales_dashboard2.png",
+      link: "https://public.tableau.com/views/CFITableauFinalExercise/Dashboard2?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
     },
     {
       id: 2,
@@ -41,13 +50,13 @@ export default function ProjectSection() {
     //   tags: ["SQL", "Tableau", "Python"],
     //   image: "",
     // },
-    {
-      id: 4,
-      title : "New York Housing Sales Dashboard",
-      description: "A dashboard to visualize sales of homes New York and other insights.",
-      tags: ["SQL", "Tableau"],
-      image: "/images/nyc_housing_sale_dashboard.png"
-    },
+    // {
+    //   id: 3,
+    //   title : "New York Housing Sales Dashboard",
+    //   description: "A dashboard to visualize sales of homes New York and other insights.",
+    //   tags: ["SQL", "Tableau"],
+    //   image: "/images/nyc_housing_sale_dashboard.png"
+    // },
     
   ];
 

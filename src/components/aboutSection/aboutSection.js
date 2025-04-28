@@ -85,7 +85,7 @@ export default function AboutSection() {
               className={`text-2xl font-semibold mb-4 ${currentTheme.text}`}
               variants={itemVariants}
             >
-              Who I Am
+              Who I Am?
             </motion.h3>
             
             <motion.p 
@@ -100,7 +100,7 @@ export default function AboutSection() {
               className={`${currentTheme.text} mb-6`}
               variants={itemVariants}
             >
-              {/* When I'm not analyzing data or coding, you can find me immersed in video games or books. I thrive on collaboration and constantly seek opportunities to learn from others in the tech community. */}
+              {/* When I'm not analyzing data or coding, you can find me immersed in books, video games or taking strolls. I thrive on collaboration and constantly seek opportunities to learn from others in the tech community. */}
               Justice has developed and deployed multiple web applications and conducted insightful data projects that have improved decision-making processes for local businesses. He aspires to become a leading data scientist in Africa and to build innovative digital platforms that empower communities and support sustainable development.
             </motion.p>
             
@@ -131,7 +131,7 @@ export default function AboutSection() {
                 Let's Collaborate
               </motion.a> */}
               
-              <ElevatorPitch />
+              {/* <ElevatorPitch /> */}
             </motion.div>
           </motion.div>
 
