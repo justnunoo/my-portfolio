@@ -20,7 +20,7 @@ export default function Home() {
       <ProjectSection />
 
       {/* Testimonials Section */}
-      <TestimonialSection />
+      {/* <TestimonialSection /> */}
 
       {/* Contact CTA Section */}
       {/* <section className="py-16 px-4 sm:px-6 lg:px-8 bg-blue-500 dark:bg-blue-700 text-white">

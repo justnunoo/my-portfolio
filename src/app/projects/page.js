@@ -39,11 +39,11 @@ export default function ProjectHome() {
     },
     {
       id: 3,
-      title: "New York Housing Sales Dashboard",
-      description: "A dashboard to visualize sales of homes in New York and other insights.",
+      title: "Dataca Sales Analysis Project",
+      description: "A data analysis of the year to year sales of a fictional company.",
       tags: ["SQL", "Tableau"],
-      image: "/images/nyc_housing_sale_dashboard.png",
-      link: "https://public.tableau.com/views/nyc-rolling-sales_17085235198880/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+      image: "/images/dataco company dashboard.png",
+      link: "https://public.tableau.com/views/datacosalesdashboard/Dashboard1?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
     },
     {
         id: 4,
@@ -52,6 +52,14 @@ export default function ProjectHome() {
         tags: ["Next.js", "Tailwind CSS"],
         image: "/images/intowine.png",
         link: "https://felix-app.vercel.app"
+    },
+    {
+      id: 5,
+      title: "New York Housing Sales Dashboard",
+      description: "A dashboard to visualize sales of homes in New York and other insights.",
+      tags: ["SQL", "Tableau"],
+      image: "/images/nyc_housing_sale_dashboard.png",
+      link: "https://public.tableau.com/views/nyc-rolling-sales_17085235198880/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
     },
     {
       id: 6,
