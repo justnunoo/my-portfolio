@@ -35,7 +35,7 @@ export default function ProjectHome() {
       description: "A full-stack e-commerce solution with payment integration.",
       tags: ["Next.js", "Clerk", "Sanity.io"],
       image: "/images/sneakerhub.png",
-      link: "/projects/ecommerce"
+      link: "https://sneakerhub-v2.vercel.app/"
     },
     {
       id: 3,
