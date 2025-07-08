@@ -26,7 +26,7 @@ export default function Navbar() {
     { name: 'Home', path: '/' },
     { name: 'About', path: '/#about' },
     { name: 'Projects', path: '/projects' },
-    { name: 'Testimonial', path: '/#testimonials' },
+    // { name: 'Testimonial', path: '/#testimonials' },
   ];
 
   // Animation variants

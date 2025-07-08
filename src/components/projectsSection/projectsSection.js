@@ -9,7 +9,7 @@ import Image from 'next/image';
 export default function ProjectSection() {
 
   const { theme } = useTheme();
-    const currentTheme = themeConfig[theme] || themeConfig.light;
+  const currentTheme = themeConfig[theme] || themeConfig.light;
 
   const projects = [
     {

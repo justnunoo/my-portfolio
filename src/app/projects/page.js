@@ -39,14 +39,38 @@ export default function ProjectHome() {
     },
     {
       id: 3,
-      title: "Dataca Sales Analysis Project",
+      title: "Dataco Sales Analysis Project",
       description: "A data analysis of the year to year sales of a fictional company.",
       tags: ["SQL", "Tableau"],
       image: "/images/dataco company dashboard.png",
       link: "https://public.tableau.com/views/datacosalesdashboard/Dashboard1?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
     },
     {
-        id: 4,
+      id: 4,
+      title: "Potato Disease Detection",
+      description: "In this project, I trained a machine learning model, to detect potato plant diseases using an image of it's leave. ",
+      tags: ["Python", "Tensorflow", "CNN", "OpenCV"],
+      image: "/images/potato disease detection.png",
+      link: "https://huggingface.co/spaces/justnunoo/potato-disease-detector"
+    },
+    {
+      id: 5,
+      title: "Football Stars Facial Recognition",
+      description: "This a facial recognition and classification project. The model was trained on the images of certain very popular footballing stars like Lionel Messi, Neymar, Ronaldo, Mbappe, and Lamine Yamal.",
+      tags: ["Python", "Tensorflow", "CNN", "OpenCV"],
+      image: "/images/FPC.png",
+      link: "https://huggingface.co/spaces/justnunoo/football-player-classifier"
+    },
+    {
+      id: 6,
+      title: "AI Generated Exams",
+      description: "An AI-powered application that generates exam questions based on a given text which also accepts text files.",
+      tags: ["NextJS", "NodeJS", "Groq AI", "Tailwind CSS"],
+      image: "/images/AI generated exams.png",
+      link: "https://jsn-quiz-app.vercel.app/"
+    },
+    {
+        id: 7,
         title: "IntoWine Consult Website",
         description: "A website for a start-up financial consulting company.",
         tags: ["Next.js", "Tailwind CSS"],
@@ -54,7 +78,7 @@ export default function ProjectHome() {
         link: "https://felix-app.vercel.app"
     },
     {
-      id: 5,
+      id: 8,
       title: "New York Housing Sales Dashboard",
       description: "A dashboard to visualize sales of homes in New York and other insights.",
       tags: ["SQL", "Tableau"],
@@ -62,15 +86,15 @@ export default function ProjectHome() {
       link: "https://public.tableau.com/views/nyc-rolling-sales_17085235198880/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
     },
     {
-      id: 6,
+      id: 9,
       title: "Portfolio Website",
       description: "A responsive portfolio website built with Next.js.",
       tags: ["Next.js", "Tailwind CSS"],
       image: "",
-      link: "/projects/portfolio"
+      link: "https://jsn-my-portfolio.vercel.app/projects"
     },
     {
-      id: 7,
+      id: 10,
       title: "Global Cybersecurity Threats Dashboard",
       description: "A dashboard to visualize global cybersecurity threats.",
       tags: ["SQL", "Tableau", "Python"],
