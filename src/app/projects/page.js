@@ -31,7 +31,7 @@ export default function ProjectHome() {
     },
     {
       id: 2,
-      title: "E-commerce Platform",
+      title: "E-commerce Platform (In-Progress)",
       description: "A full-stack e-commerce solution with payment integration.",
       tags: ["Next.js", "Clerk", "Sanity.io"],
       image: "/images/sneakerhub.png",
